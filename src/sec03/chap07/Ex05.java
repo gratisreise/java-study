@@ -25,7 +25,7 @@ public class Ex05 {
         String nullStr2 = null;
 
         //  ⚠️ 컴파일 오류 발생
-        System.out.println(notInitStr);
+        //System.out.println(notInitStr);
 
         //  코드에 따라 정상실행 또는 런타임 오류
         System.out.println(nullStr2);
