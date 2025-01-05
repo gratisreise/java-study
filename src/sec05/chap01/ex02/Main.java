@@ -1,4 +1,4 @@
-package sec05.ex02;
+package sec05.chap01.ex02;
 
 public class Main {
 
