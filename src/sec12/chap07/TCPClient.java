@@ -1,5 +1,8 @@
 package sec12.chap07;
 
+import static sec12.chap07.TCPServer.PORT_NO;
+import static sec12.chap07.TCPServer.SERVER_IP;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;

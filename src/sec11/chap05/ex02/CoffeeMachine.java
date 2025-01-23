@@ -45,4 +45,8 @@ public class CoffeeMachine {
         try { wait(); // 커피를 채우고 나감
         } catch (InterruptedException e) {}
     }
+
+
+    public void takeout(sec11.chap05.ex02.CustomerRun customerRun) {
+    }
 }

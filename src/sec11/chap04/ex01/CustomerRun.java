@@ -1,7 +1,7 @@
 package sec11.chap04.ex01;
 
 public class CustomerRun implements Runnable {
-    String name;
+    public String name;
     ATM atmToUse;
     int needed;
 

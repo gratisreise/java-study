@@ -14,12 +14,12 @@ public class Main {
     }
     //  ⭐ 상속받는 클래스와 구현하는 인터페이스(들)을 함께 조건으로
     //  여기서는 클래스와 인터페이스 모두 extends 뒤에 &로 나열
-    public static <T extends Mamal & Hunter & Swimmer>
-    void descHuntingMamal (T animal)  {
-        //  ⭐️ 조건에 해당하는 필드와 메소드 사용 가능
-        System.out.printf("겨울잠 %s%n", animal.hibernation ? "잠" : "자지 않음");
-        animal.hunt();
-    }
+//    public static <T extends Mamal & Hunter & Swimmer>
+//    void descHuntingMamal (T animal)  {
+//        //  ⭐️ 조건에 해당하는 필드와 메소드 사용 가능
+//        System.out.printf("겨울잠 %s%n", animal.hibernation ? "잠" : "자지 않음");
+//        animal.hunt();
+//    }
 
     public static <T extends Flyer & Hunter>
     void descFlyingHunter (T animal) {

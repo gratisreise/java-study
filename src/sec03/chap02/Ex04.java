@@ -11,7 +11,7 @@ public class Ex04 {
         float flt03 = flt01 + flt02;
 
         //  float과 double의 연산은 double 반환
-        float flt04 = flt01 + dbl01; // ⚠️ 불가
+        //float flt04 = flt01 + dbl01; // ⚠️ 불가
 
         //  부동소수점 방식상 오차 자주 있음
         double dbl02 = 0.2 + 0.3f;

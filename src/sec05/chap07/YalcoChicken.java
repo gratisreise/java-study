@@ -12,10 +12,10 @@ public class YalcoChicken {
         this.name = name;
     }
 
-    public void changeFinalFields () {
-        // ⚠️ 불가
-        this.no++;
-    }
+//    public void changeFinalFields () {
+//        // ⚠️ 불가
+//        this.no++;
+//    }
 
     public final void fryChicken () {
         System.out.println("염지, 반죽입히기, 튀김");
