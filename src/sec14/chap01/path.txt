@@ -1,0 +1,10 @@
+
+윈도우
+java -cp "compiled;compiled/bin" cptest/Main
+
+
+맥/리눅스
+java -cp compiled:compiled/bin cptest/Main
+
+
+
