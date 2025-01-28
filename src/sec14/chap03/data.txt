@@ -1,0 +1,108 @@
+## Gradle CLI로 시연
+
+- 🍿 내부적으로 어떻게 실행되는지 살펴보는 목적
+- 굳이 따라 실행해 볼 필요 없음 *( 설치 등 복잡한 부분들 있음 )*
+
+### Gradle 설치
+
+- [🔗 Gradle | Installation](https://gradle.org/install/)
+
+### 새 프로젝트 생성
+
+- 터미널에서 프로젝트를 생성할 폴더로 이동
+    - 프로젝트명의 폴더 필요 - `gradle-practice`
+
+```bash
+gradle init
+```
+
+- `application` 으로진행
+
+```bash
+gradle build
+```
+
+- `build` 폴더 생성 확인 - 내용들 둘러보기
+
+```bash
+gradle clean
+```
+
+```bash
+gradle run
+```
+
+```bash
+gradle tasks --all
+```
+
+- 💡 프로젝트에서 사용할 수 있는 모든 그레이들 명령어 확인
+
+---
+
+## IntelliJ 내장 Gradle 사용해보기
+
+- 🍉 그레이들 겉핥기
+- 인텔리제이로 프로젝트 만들기 *( 또는 그래들로 만든 것 그냥 사용 )*
+- 프로젝트의 `build.gradle` 파일과 External Libraries 항목들 살펴보기
+- 디렉토리 구조 살펴보기
+    - `src`
+        - `main` : 코드파일들
+        - `test` : 테스트 코드들
+        - `resources` : 속성, 이미지파일 등 실행에 필요한 비 자바 파일들
+- 설정 - `Gradle` 검색
+    - 빌드와 테스트 모두 IntelliJ IDEA로
+        - 윈도우에서의 한글 깨짐 등의 문제 방지
+        - 더 빠른 실행
+
+### 기본 태스크들 사용해보기
+
+- IntelliJ 우측의 🐘 버튼 클릭
+- 아래의 항목들 실행해보기
+    - build
+    - clean
+    - jar
+    - javadoc
+
+### 외부 라이브러리 가져오기
+
+- `build.gradle` 파일의 `repositories` 항목 확인
+    - `mavenCentral` : Maven 중앙 저장소로부터 외부 라이브러리 가져옴
+        - *연동된 앱스토어*
+        - 기타 jcenter, google 등의 저장소들이 있음
+- [🔗 Maven Repository (mvnrepository.com)](https://mvnrepository.com/)
+- `apache commons` 검색
+    - `popular` 로 정렬해서 가장 위의 것 선택
+    - 최신 버전 선택 후 `gradle` 탭의 내용 복사
+- `build.gradle` 파일의 `dependencies` 항목에 붙여넣기
+- 탐색기 탭에서 외부 라이브러리 펼치기
+- Gradle 탭에서 ♻️ 버튼 클릭
+    - 외부 라이브러리에 항목 추가됨 확인
+- 🤖 또는 Copilot 등으로 쉽게 추가
+    - `// apache commons` + `Enter`
+
+```java
+				String capHello = StringUtils.capitalize("hello");
+        String randomStr = RandomStringUtils.randomAlphabetic(10);
+```
+
+- `org.apache.commons...` 패키지의 클래스들을 사용할 수 있음 확인
+- 실행시 우측 상단에 ‘현재 파일’로…
+
+<aside>
+💡 이 외에도 따로 책이나 강의로 다룰 만큼 다양한 고급 기능들이 있습니다.
+
+</aside>
+
+### 윈도우에서 한글 깨짐 문제 해결
+
+```java
+				System.out.println("깨질거야");
+```
+
+- 설정 - `Gradle` 검색
+- 실행 및 테스트 옵션을 IntelliJ로
+
+---
+
+[강의정보 & 질문하는 방법 ( 🛑 필.수.확.인 )](https://www.notion.so/af8dcf75ed9246ab9d2f0395aa1667ab?pvs=21)
